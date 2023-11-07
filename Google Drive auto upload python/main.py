@@ -5,7 +5,7 @@ import os
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 SERVICE_ACCOUNT_FILE = 'service_account.json'
-PARENT_FOLDER_ID = "1YyChB6etVBwfk-tEDMmrJXWowdkTs6Gi"
+PARENT_FOLDER_ID = " " # Your drive folder ID goes here, ID looks like this: 9ZaPxQ2oNw8fYj-RcD7V1tLsEhU4KvA6
 
 def authenticate():
     creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
@@ -47,4 +47,4 @@ def upload(file_path):
                     media_body=media_body
                 ).execute()
 
-upload(r"C:\KRISH\Main Branch XD\websites\cuberto")
+upload() #give the location or path to your folder or file you want to upload here.
